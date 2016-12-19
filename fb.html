@@ -8,7 +8,6 @@ img {
 }
 </style>
 <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
 </head>
@@ -134,13 +133,28 @@ img {
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" login_text="
-" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=1470789236267901&amp;container_width=0&amp;locale=en_US&amp;login_text=%0A&amp;scope=public_profile%2Cemail&amp;sdk=joey">
-  
-    <span style="border:1px solid red;align=center">
-  <iframe name="fdff1802d9a39c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:login_button Facebook Social Plugin" src="https://www.facebook.com/v2.8/plugins/login_button.php?app_id=1470789236267901&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df1dfdd129af9b1c%26domain%3Drrchatto.github.io%26origin%3Dhttps%253A%252F%252Frrchatto.github.io%252Ff234cbe2abd0c%26relation%3Dparent.parent&amp;container_width=0&amp;locale=en_US&amp;login_text=%0A&amp;scope=public_profile%2Cemail&amp;sdk=joey" style="border: none; visibility: visible; width: 64px; height: 22px;" class="">
-    </iframe></span>
+<div>
+  <div class="_4z_b _4z_8 _4z_d" role="button" tabindex="0" id="u_0_1">
+    <table class="uiGrid _51mz" cellspacing="0" cellpadding="0">
+      <tbody><tr class="_51mx"><td class="_51m-">
+        <div class="_4z_g">
+          <span class="_4z_e">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" class="_55a2">
+              <path fill="white" d="
+          M204.1 0H11.9C5.3 0 0 5.3 0 11.9v192.2c0 6.6 5.3 11.9 11.9
+          11.9h103.5v-83.6H87.2V99.8h28.1v-24c0-27.9 17-43.1 41.9-43.1
+          11.9 0 22.2.9 25.2 1.3v29.2h-17.3c-13.5 0-16.2 6.4-16.2
+          15.9v20.8h32.3l-4.2 32.6h-28V216h55c6.6 0 11.9-5.3
+          11.9-11.9V11.9C216 5.3 210.7 0 204.1 0z">
+              </path>
+            </svg>
+            <img class="_55at img" src="https://www.facebook.com/rsrc.php/v3/yR/r/teE39sffXW8.png" alt="" width="16" height="16">
+          </span><img class="_4z_5 img" src="https://www.facebook.com/rsrc.php/v3/yx/r/iqVGY7gYXlg.gif" alt="" width="20" height="19">
+        </div></td><td class="_51m- _51mw">
+  <span class="_4z_9"><span class="_4z_f fwb">Log In</span>
+        </span>
+        </td></tr></tbody></table></div></div>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status" align="center">Please log into Facebook.</div>
 
