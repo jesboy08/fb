@@ -124,6 +124,20 @@ img {
   
     });
   }
+  function fbLogoutUser() {
+FB.getLoginStatus(function(response) {
+    if (response && response.status === 'connected') {
+
+        FB.logout(function(response) {
+            document.location.reload();
+        });
+    } else if (response.status === 'not_authorized') 
+        {
+             FB.logout(function(response) {
+            document.location.reload();
+            });
+        }
+});}
 </script>
 
 
