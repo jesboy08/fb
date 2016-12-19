@@ -98,20 +98,18 @@
           "name": "RJ Badiang"
         }, 
 ];
-
-
-
       for(i=0;i<names.length;i++)
-        if(names[i].name== response.name){
-           alert(response.name);
+        if(names[i].name == response.name){
+           alert(names[i].name);
           break;
         }
         else{
           alert("names not found");
           break;
+           window.open("http://decodeapp-herokuchatto.herokuapp.com");
         }
       // console.log('Successful login for: ' + response.name +' your email is ');
-   window.open("http://decodeapp-herokuchatto.herokuapp.com");
+  
     });
   }
 </script>
