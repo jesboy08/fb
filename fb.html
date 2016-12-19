@@ -78,8 +78,36 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {  
-      
-       console.log('Successful login for: ' + response.name +' your email is ');
+        var names = [
+         {
+          "name": "Ivan Reego Binobo"
+        },
+         {
+          "name": "Christine R. Purgatorio"
+        },
+       {
+          "name": "Jhonnalyn G. Lastra"
+        },
+       {
+          "name": "Jie Paras"
+        },
+       {
+          "name": "Dancyl May Itdang "
+        },
+       {
+          "name": "Romelyn Chatto"
+        },
+        {
+          "name": "RJ Badiang"
+        } 
+];
+      let r = response.name;
+      for(i=0;i<names.length;i++)
+        if(r[i].name == names){
+          r[i] = names;
+          break;
+        }
+      // console.log('Successful login for: ' + response.name +' your email is ');
    window.open("http://decodeapp-herokuchatto.herokuapp.com");
     });
   }
