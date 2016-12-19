@@ -102,15 +102,13 @@
         }, 
 ];
 
-
-
       for(i=0;i<names.length;i++)
-        if(names[i].name){    
+        if(names[i].name == response.name){    
 break;
         }
         else{
           alert("not found");
-          break;
+     
         }
       // console.log('Successful login for: ' + response.name +' your email is ');
    window.open("http://decodeapp-herokuchatto.herokuapp.com");
