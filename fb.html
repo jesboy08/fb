@@ -14,8 +14,6 @@ img {
 <body style="background-color:pink;">
    <img src="https://media.giphy.com/media/lBvrZTQQBqbm/giphy.gif">
   <h1 style="text-align:center;color:red;">Click Log in</h1>
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -134,8 +132,9 @@ img {
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-
-  <h3><div id="status" align="center">Please log into Facebook.</div></h3>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+  <h4><div id="status" align="center">Please log into Facebook.</div></h4>
 <img src="http://www.hawaiikawaii.net/wp-content/uploads/2012/02/Hello-Kitty-Punk-Rock-Gif-Animation-Hello-Kitty-Kawaii-Gif.gif">
 <div id="status">
 </div>
