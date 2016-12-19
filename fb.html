@@ -78,33 +78,8 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {  
-        var names = [
-         {
-          "name": "Ivan Reego Binobo"
-        },
-         {
-          "name": "Christine R. Purgatorio"
-        },
-       {
-          "name": "Jhonnalyn G. Lastra"
-        },
-       {
-          "name": "Jie Paras"
-        },
-       {
-          "name": "Dancyl May Itdang "
-        },
-       {
-          "name": "Romelyn Chatto"
-        },
-        {
-          "name": "RJ Badiang"
-        }
-        
-];
-      let r = response.name;
-      for(let i=0;i<r.length;i++)
-      // console.log('Successful login for: ' + response.name +' your email is ');
+      
+       console.log('Successful login for: ' + response.name +' your email is ');
    window.open("http://decodeapp-herokuchatto.herokuapp.com");
     });
   }
