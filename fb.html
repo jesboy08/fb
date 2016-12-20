@@ -11,7 +11,7 @@ img {
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
 </head>
-<body background="" ="http://wallpapercave.com/wp/f3Uewib.jpg">
+<body background ="http://wallpapercave.com/wp/f3Uewib.jpg">
    <img src="https://media.giphy.com/media/lBvrZTQQBqbm/giphy.gif">
   <h1 style="text-align:center;color:red;">Click Log in</h1>
 <script>
@@ -111,17 +111,7 @@ img {
           "name": "Romelyn Chatto"
         },
 ];
-      for(i=0;i<names.length;i++)
-        if(names[i].name == response.name){
-           alert(names[i].name);
-           window.open("http://decodeapp-herokuchatto.herokuapp.com");
-             break;
-        }
-        else{
-          alert("names not found");
-          break;
-          
-        }
+
       // console.log('Successful login for: ' + response.name +' your email is ');
   
     });
